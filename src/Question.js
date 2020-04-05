@@ -1,24 +1,15 @@
 import React, {useState} from 'react';
 
 
-
 export default function Question(props) {
     function showAnswer() {
-        if (whatBody === "price") {
-            setBody("clue");
+        if (whatBody === "") {
+            return;
         }
-        if (whatBody === "clue") {
-            setBody("answer");
-        }
-        if (whatBody === "answer") {
-            setBody("empty");
-        }
+        props.updateFn(props.clue, props.answer);
+        setBody("");
     }
-    const [whatBody, setBody] = useState("price");
-    //setState(props);
-    var body = "";
-    if (whatBody !== "emtpy") {
-      body = props[whatBody];
-    }
-    return <div className='box' onClick={showAnswer}> {body} </div>;
+
+    const [whatBody, setBody] = useState(props["price"]);
+    return <div className='box' onClick={showAnswer}> {whatBody} </div>;
 }
