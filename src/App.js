@@ -80,7 +80,6 @@ function App() {
         );
     }
 
-
     if (isBoard === 'showBoard') {
         return showBoard("", "");
     }
