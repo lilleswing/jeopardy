@@ -5,11 +5,6 @@ import questionData from './question-data.json';
 
 
 function App() {
-    const [isBoard, setBoard] = useState('showBoard');
-    const [myClue, setClue] = useState('');
-    const [myAnswer, setAnswer] = useState('');
-    setPrices();
-
     function setPrices() {
         let topicMap = {}
         for (let i = 0; i < questionData['questions'].length; i++) {
@@ -79,6 +74,13 @@ function App() {
             </div>
         );
     }
+
+
+    const [isBoard, setBoard] = useState('showBoard');
+    const [myClue, setClue] = useState('');
+    const [myAnswer, setAnswer] = useState('');
+    setPrices();
+
 
     if (isBoard === 'showBoard') {
         return showBoard("", "");
