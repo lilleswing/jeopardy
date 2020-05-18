@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "js-beautify": "^1.10.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.3.1"
   },
-  "homepage": "http://ScriptEdcurriculum.github.io/jeopardy_sol",
+  "homepage": "https://lilleswing.github.io/jeopardy",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

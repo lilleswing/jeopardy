@@ -1,16 +1,36 @@
-.App{
+.App {
     width: 100vh;
     margin: 0 auto;
 }
 
 .board {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 90%;
+    width: 400px;
 }
 
 .column {
-    display:flex;
+    display: flex;
     flex-direction: column;
+    width: 133px;
+}
+
+.box {
+    display: flex;
+    border-style: solid;
+    border-color: blue;
+    padding: 2px;
+    height: 100px;
+    #line-height: 100px;
+    #transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }
