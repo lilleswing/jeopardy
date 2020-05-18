@@ -8,7 +8,7 @@
     "react-dom": "^16.8.6",
     "react-scripts": "^3.3.1"
   },
-  "homepage": "http://ScriptEdcurriculum.github.io/jeopardy_sol",
+  "homepage": "https://lilleswing.github.io/jeopardy",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
